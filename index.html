@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Privacyverklaring van de Break Up-app van Arya Autar."
+    />
+    <meta name="theme-color" content="#153c31" />
+    <title>Privacyverklaring · Break Up</title>
+    <style>
+      :root {
+        --page: #f4f8f5;
+        --surface: #fff;
+        --ink: #17342c;
+        --soft: #5e746d;
+        --faint: #8da099;
+        --line: #dfeae5;
+        --green: #2f9a66;
+        --deep: #1f704b;
+        --pale: #e7f5ed;
+        --nav: #153c31;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; background: var(--page); }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 95% 5%, rgba(90, 197, 138, .13), transparent 28rem),
+          var(--page);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--deep); font-weight: 700; text-underline-offset: 3px; }
+      a:focus-visible { outline: 3px solid rgba(47, 154, 102, .3); outline-offset: 3px; }
+
+      .hero {
+        padding: 28px 24px 68px;
+        background:
+          radial-gradient(circle at 82% 10%, rgba(99, 208, 145, .18), transparent 26rem),
+          var(--nav);
+        color: white;
+      }
+
+      .hero-inner, .layout, footer { width: min(1080px, 100%); margin: 0 auto; }
+      .brand { display: inline-flex; align-items: center; gap: 12px; }
+      .mark {
+        width: 38px; height: 38px; display: grid; place-items: center;
+        border-radius: 12px; background: #5ac58a; color: white;
+        font-size: 19px; font-weight: 900;
+      }
+      .brand strong, .brand small { display: block; }
+      .brand strong { font-size: 17px; }
+      .brand small {
+        margin-top: 2px; color: rgba(255,255,255,.6); font-size: 10px;
+        font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+      }
+      .intro { max-width: 760px; margin-top: 70px; }
+      .kicker {
+        margin: 0 0 10px; color: #72d99f; font-size: 12px;
+        font-weight: 850; letter-spacing: .13em; text-transform: uppercase;
+      }
+      h1 {
+        margin: 0; font-size: clamp(44px, 7vw, 72px); line-height: .98;
+        letter-spacing: -.055em;
+      }
+      .lead {
+        max-width: 690px; margin: 24px 0 0; color: rgba(255,255,255,.76);
+        font-size: clamp(17px, 2.2vw, 21px); line-height: 1.65;
+      }
+      .meta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 9px; }
+      .meta span {
+        padding: 7px 11px; border: 1px solid rgba(255,255,255,.13);
+        border-radius: 999px; background: rgba(255,255,255,.07);
+        color: rgba(255,255,255,.66); font-size: 11px; font-weight: 700;
+      }
+
+      .layout {
+        padding: 54px 24px 80px; display: grid;
+        grid-template-columns: 220px minmax(0, 740px);
+        justify-content: space-between; gap: 64px; align-items: start;
+      }
+      aside {
+        position: sticky; top: 26px; padding: 20px;
+        border: 1px solid var(--line); border-radius: 17px;
+        background: rgba(255,255,255,.86); box-shadow: 0 12px 34px rgba(30,77,59,.05);
+        backdrop-filter: blur(14px);
+      }
+      aside p {
+        margin: 0 0 12px; color: var(--faint); font-size: 10px;
+        font-weight: 850; letter-spacing: .13em; text-transform: uppercase;
+      }
+      aside nav { display: grid; gap: 3px; }
+      aside a {
+        margin: 0 -8px; padding: 8px; border-radius: 9px;
+        color: var(--soft); font-size: 12px; line-height: 1.35; text-decoration: none;
+      }
+      aside a:hover { background: var(--pale); color: var(--deep); }
+
+      section { padding: 40px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+      section:first-child { padding-top: 4px; }
+      h2 {
+        margin: 0 0 18px; font-size: clamp(25px, 3vw, 32px);
+        line-height: 1.15; letter-spacing: -.035em;
+      }
+      h3 { margin: 0 0 8px; font-size: 16px; }
+      article p, article li { color: var(--soft); font-size: 15px; line-height: 1.8; }
+      article p { margin: 0 0 16px; }
+      article p:last-child { margin-bottom: 0; }
+      article strong { color: var(--ink); }
+      article ul { margin: 12px 0 20px; padding-left: 23px; }
+      article li { margin: 7px 0; padding-left: 3px; }
+      article li::marker { color: var(--green); }
+
+      .table-wrap {
+        margin: 24px 0; overflow-x: auto; border: 1px solid var(--line);
+        border-radius: 17px; background: var(--surface);
+        box-shadow: 0 10px 28px rgba(30,77,59,.04);
+      }
+      table { width: 100%; border-collapse: collapse; text-align: left; }
+      th, td { padding: 15px 18px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      tr:last-child td { border-bottom: 0; }
+      th {
+        background: #f8fbf9; color: var(--faint); font-size: 10px;
+        font-weight: 850; letter-spacing: .1em; text-transform: uppercase;
+      }
+      td { color: var(--soft); font-size: 13px; line-height: 1.6; }
+      td:first-child { width: 34%; color: var(--ink); font-weight: 750; }
+      .highlight {
+        margin-top: 24px; padding: 23px 24px; border: 1px solid #cce6d7;
+        border-radius: 17px; background: var(--pale);
+      }
+      .highlight h3, .highlight p { color: var(--deep); }
+      .contact {
+        margin-top: 40px; padding: 30px; border: 0; border-radius: 24px;
+        background: var(--nav);
+      }
+      .contact h2 { color: white; }
+      .contact p, .contact a { color: rgba(255,255,255,.76); }
+      footer {
+        padding: 30px 24px 42px; display: flex; justify-content: space-between;
+        gap: 20px; border-top: 1px solid var(--line);
+        color: var(--faint); font-size: 11px; font-weight: 650;
+      }
+
+      @media (max-width: 800px) {
+        .layout { grid-template-columns: 1fr; gap: 30px; padding-top: 38px; }
+        aside { position: static; }
+        aside nav { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      }
+      @media (max-width: 520px) {
+        .hero, .layout, footer { padding-left: 18px; padding-right: 18px; }
+        .intro { margin-top: 52px; }
+        h1 { font-size: 43px; }
+        aside nav { grid-template-columns: 1fr; }
+        section { padding: 33px 0; }
+        .contact { padding: 24px 21px; }
+        footer { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">B</span>
+          <span><strong>Break Up</strong><small>Privacy</small></span>
+        </div>
+        <div class="intro">
+          <p class="kicker">Jouw gegevens, helder uitgelegd</p>
+          <h1>Privacyverklaring</h1>
+          <p class="lead">
+            Break Up helpt je om gedurende de werkdag actief te pauzeren. Hier
+            leggen we in gewone taal uit welke persoonsgegevens we gebruiken,
+            waarom we dat doen en welke keuzes je hebt.
+          </p>
+          <div class="meta">
+            <span>Versie 1.0</span>
+            <span>Laatst bijgewerkt op 22 augustus 2026</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside aria-label="Inhoudsopgave">
+        <p>Op deze pagina</p>
+        <nav>
+          <a href="#verantwoordelijke">Wie is verantwoordelijk?</a>
+          <a href="#gegevens">Welke gegevens verwerken we?</a>
+          <a href="#doelen">Waarom verwerken we gegevens?</a>
+          <a href="#delen">Met wie delen we gegevens?</a>
+          <a href="#bewaren">Hoe lang bewaren we gegevens?</a>
+          <a href="#rechten">Jouw privacyrechten</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+
+      <article>
+        <section id="verantwoordelijke">
+          <h2>1. Wie is verantwoordelijk?</h2>
+          <p>
+            <strong>Arya Autar</strong> is als individuele maker en aanbieder van
+            Break Up de verwerkingsverantwoordelijke voor de persoonsgegevens die
+            via de app worden verwerkt. Break Up is de naam van de app en geen
+            aparte rechtspersoon. In deze verklaring noemen we de verantwoordelijke
+            verder “Break Up”, “we” of “ons”.
+          </p>
+          <p>
+            Heb je een privacyvraag? Mail dan naar
+            <a href="mailto:aryaautar@outlook.com">aryaautar@outlook.com</a>.
+            Als je Break Up via je werkgever gebruikt, kan je werkgever voor
+            bepaalde eigen verwerkingen ook zelfstandig verantwoordelijk zijn.
+          </p>
+        </section>
+
+        <section id="gegevens">
+          <h2>2. Welke gegevens verwerken we?</h2>
+          <p>Afhankelijk van hoe je de app gebruikt, verwerken we:</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Soort gegevens</th><th>Voorbeelden</th></tr></thead>
+              <tbody>
+                <tr><td>Accountgegevens</td><td>Naam, e-mailadres, gebruikers-ID en beveiligde inloggegevens.</td></tr>
+                <tr><td>Profiel en organisatie</td><td>Avatar, gekoppelde organisatie en instellingen.</td></tr>
+                <tr><td>Oefening en voortgang</td><td>Oefening, moeilijkheid, datum, tijd, duur, herhalingen, nauwkeurigheid, afgeleide sensorscore, Fits, level, streaks en badges.</td></tr>
+                <tr><td>Klassement</td><td>Naam, avatar, level en maandelijkse score binnen je organisatie.</td></tr>
+                <tr><td>Meldingen</td><td>Push-token, platform, voorkeuren en beperkte verzendstatus.</td></tr>
+                <tr><td>Techniek en veiligheid</td><td>Sessie-, authenticatie- en technische loggegevens voor beveiliging en storingsonderzoek.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="highlight">
+            <h3>Bewegingssensoren</h3>
+            <p>
+              Tijdens een oefening gebruikt Break Up de bewegingssensoren van je
+              telefoon om herhalingen te herkennen. Ruwe sensorwaarden worden op je
+              toestel verwerkt en niet als ruwe meetreeks naar onze server verzonden
+              of daar bewaard. Alleen afgeleide oefenresultaten, zoals het aantal
+              herhalingen en een nauwkeurigheidsscore, worden opgeslagen.
+            </p>
+          </div>
+        </section>
+
+        <section id="doelen">
+          <h2>3. Waarom verwerken we gegevens?</h2>
+          <p>We gebruiken persoonsgegevens om:</p>
+          <ul>
+            <li>je account aan te maken, te beveiligen en toegankelijk te houden;</li>
+            <li>oefeningen, voortgang, Fits, levels en badges te registreren;</li>
+            <li>een maandklassement binnen jouw organisatie aan te bieden;</li>
+            <li>relevante herinneringen te sturen als je meldingen hebt toegestaan;</li>
+            <li>misbruik te voorkomen en de app veilig en goed werkend te houden;</li>
+            <li>geaggregeerd inzicht te krijgen in het gebruik van de app.</li>
+          </ul>
+          <p>
+            We verwerken gegevens voor zover dat nodig is om de app en je account
+            te leveren, voor wettelijke verplichtingen en voor onze gerechtvaardigde
+            belangen bij een veilige en goed werkende dienst. Waar toestemming
+            wettelijk vereist is, vragen we die vooraf. Pushmeldingen kun je altijd
+            uitschakelen via de instellingen van je telefoon.
+          </p>
+        </section>
+
+        <section id="delen">
+          <h2>4. Met wie delen we gegevens?</h2>
+          <p>We verkopen je persoonsgegevens niet en gebruiken ze niet voor advertenties.</p>
+          <ul>
+            <li><strong>Supabase</strong> verzorgt authenticatie, database en backendfuncties.</li>
+            <li><strong>Expo</strong> geeft pushmeldingen door.</li>
+            <li><strong>Apple</strong> distribueert de iOS-app en levert pushmeldingen af.</li>
+          </ul>
+          <p>
+            Deze partijen verwerken alleen gegevens die voor hun taak nodig zijn.
+            Gegevens kunnen buiten de Europese Economische Ruimte worden verwerkt.
+            Wanneer dat gebeurt, gebruiken we de wettelijk vereiste waarborgen.
+          </p>
+          <p>
+            Deelnemers binnen jouw organisatie kunnen in het klassement je naam,
+            avatar, level en maandelijkse score zien. Bevoegde beheerders kunnen
+            geaggregeerde gebruiksinzichten ontvangen. Break Up is niet bedoeld om
+            individuele werknemers te beoordelen of besluiten over hun werk te nemen.
+          </p>
+          <p>
+            De tekst van een pushmelding loopt via Expo en Apple en kan, afhankelijk
+            van je toestelinstellingen, op je vergrendelscherm zichtbaar zijn.
+          </p>
+        </section>
+
+        <section id="bewaren">
+          <h2>5. Hoe lang bewaren we gegevens?</h2>
+          <p>
+            We bewaren account- en voortgangsgegevens zolang je account actief is en
+            zolang dat nodig is om Break Up te leveren. Je kunt je account definitief
+            verwijderen via <strong>Profiel → Account verwijderen</strong> in de app.
+            Daarmee worden je account en gekoppelde actieve appgegevens verwijderd.
+          </p>
+          <p>
+            Een beperkte kopie kan tijdelijk aanwezig zijn in beveiligde back-ups of
+            technische logs. Deze wordt volgens de bewaartermijnen van onze
+            dienstverleners verwijderd of alleen langer bewaard wanneer de wet dat vereist.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Beveiliging en automatische verwerking</h2>
+          <p>
+            We nemen passende technische en organisatorische maatregelen om
+            persoonsgegevens te beschermen. Kies zelf een uniek, sterk wachtwoord
+            en deel je inloggegevens niet.
+          </p>
+          <p>
+            Break Up berekent automatisch voortgang, scores, levels, badges en
+            meldingen. Dit heeft geen juridische of vergelijkbare ingrijpende
+            gevolgen en wordt niet gebruikt voor besluiten over je arbeidsrelatie.
+          </p>
+        </section>
+
+        <section id="rechten">
+          <h2>7. Jouw privacyrechten</h2>
+          <p>Afhankelijk van je situatie kun je ons vragen om:</p>
+          <ul>
+            <li>inzage in je persoonsgegevens;</li>
+            <li>onjuiste of onvolledige gegevens te corrigeren;</li>
+            <li>gegevens te verwijderen of de verwerking te beperken;</li>
+            <li>gegevens in een overdraagbaar formaat te ontvangen;</li>
+            <li>bezwaar te maken tegen verwerking op basis van gerechtvaardigd belang;</li>
+            <li>eerder gegeven toestemming in te trekken.</li>
+          </ul>
+          <p>
+            We kunnen aanvullende informatie vragen om je identiteit te controleren.
+            Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens of de
+            privacytoezichthouder in het land waar je woont of werkt.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Minderjarigen</h2>
+          <p>
+            Break Up is bedoeld voor een werkomgeving en niet gericht op kinderen
+            jonger dan 16 jaar. Denk je dat een minderjarige zonder geldige
+            toestemming een account heeft? Neem dan contact met ons op.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Wijzigingen</h2>
+          <p>
+            We kunnen deze verklaring aanpassen wanneer de app, onze werkwijze of de
+            wet verandert. Hier staat altijd de actuele versie en wijzigingsdatum.
+            Bij belangrijke wijzigingen informeren we gebruikers waar passend ook
+            via de app of per e-mail.
+          </p>
+        </section>
+
+        <section id="contact" class="contact">
+          <p class="kicker">Vragen of een privacyverzoek?</p>
+          <h2>10. Neem contact met ons op</h2>
+          <p>
+            Mail <a href="mailto:aryaautar@outlook.com">aryaautar@outlook.com</a>
+            en vermeld dat je vraag over Break Up gaat. We reageren binnen de
+            wettelijke termijn.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <span>© 2026 Break Up</span>
+      <span>Gezond bewegen, met respect voor je privacy.</span>
+    </footer>
+  </body>
+</html>
