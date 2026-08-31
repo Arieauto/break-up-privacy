@@ -179,7 +179,7 @@
             waarom we dat doen en welke keuzes je hebt.
           </p>
           <div class="meta">
-            <span>Versie 1.1</span>
+            <span>Versie 1.2</span>
             <span>Laatst bijgewerkt op 31 augustus 2026</span>
           </div>
         </div>
@@ -204,10 +204,12 @@
         <section id="verantwoordelijke">
           <h2>1. Wie is verantwoordelijk?</h2>
           <p>
-            <strong>De Break Up-app</strong> is de verwerkingsverantwoordelijke
-            voor de persoonsgegevens die via de app worden verwerkt. In deze
-            verklaring noemen we de verantwoordelijke verder “Break Up”, “we”
-            of “ons”.
+            <strong>Break Up</strong> is de handelsnaam waaronder Arya Autar de
+            Break Up-app aanbiedt. Arya Autar, handelend onder de naam Break Up,
+            bepaalt het doel van en de middelen voor de verwerking van
+            persoonsgegevens en is daarmee de verwerkingsverantwoordelijke. In
+            deze verklaring noemen we de verantwoordelijke verder “Break Up”,
+            “we” of “ons”.
           </p>
           <p>
             Heb je een privacyvraag? Mail dan naar
@@ -224,15 +226,23 @@
             <table>
               <thead><tr><th>Soort gegevens</th><th>Voorbeelden</th></tr></thead>
               <tbody>
-                <tr><td>Accountgegevens</td><td>Naam, e-mailadres, gebruikers-ID en beveiligde inloggegevens.</td></tr>
-                <tr><td>Profiel en organisatie</td><td>Avatar, gekoppelde organisatie en instellingen.</td></tr>
+                <tr><td>Accountgegevens</td><td>Naam, e-mailadres, gebruikers-ID en authenticatiegegevens. Wachtwoorden worden beveiligd verwerkt via Supabase Auth; Break Up ontvangt geen leesbaar wachtwoord.</td></tr>
+                <tr><td>Profiel en organisatie</td><td>Avatarconfiguratie, gekoppelde organisatie via een join-code en instellingen.</td></tr>
                 <tr><td>Oefening en voortgang</td><td>Oefening, moeilijkheid, datum, tijd, duur, herhalingen, nauwkeurigheid, afgeleide sensorscore, Fits, level, streaks en badges.</td></tr>
                 <tr><td>Klassement</td><td>Naam, avatar, level en maandelijkse score binnen je organisatie.</td></tr>
-                <tr><td>Meldingen</td><td>Push-token, platform, voorkeuren en beperkte verzendstatus.</td></tr>
+                <tr><td>Meldingen</td><td>Expo push-token, platform, apparaatnaam of -model, registratiemoment, actieve status, voorkeuren en beperkte verzendstatus.</td></tr>
                 <tr><td>Techniek en veiligheid</td><td>Sessie-, authenticatie- en technische loggegevens voor beveiliging en storingsonderzoek.</td></tr>
               </tbody>
             </table>
           </div>
+          <p>
+            Account-, profiel- en organisatiegegevens ontvangen we rechtstreeks
+            van jou wanneer je je registreert, een join-code gebruikt of je
+            profiel aanpast. Oefenings-, voortgangs- en klassementsgegevens
+            ontstaan automatisch wanneer je de app gebruikt. Technische en
+            meldingsgegevens worden automatisch vastgelegd wanneer je inlogt of
+            meldingen inschakelt.
+          </p>
           <div class="highlight">
             <h3>Bewegingssensoren</h3>
             <p>
@@ -257,11 +267,16 @@
             <li>geaggregeerd inzicht te krijgen in het gebruik van de app.</li>
           </ul>
           <p>
-            We verwerken gegevens voor zover dat nodig is om de app en je account
-            te leveren, voor wettelijke verplichtingen en voor onze gerechtvaardigde
-            belangen bij een veilige en goed werkende dienst. Waar toestemming
-            wettelijk vereist is, vragen we die vooraf. Pushmeldingen kun je altijd
-            uitschakelen via de instellingen van je telefoon.
+            Voor accountbeheer en de kernfuncties verwerken we gegevens omdat dit
+            nodig is om de door jou gevraagde dienst te leveren. Voor beveiliging,
+            fraudepreventie, storingsonderzoek en geaggregeerd inzicht beroepen we
+            ons op ons gerechtvaardigde belang bij een veilige en goed werkende
+            dienst. Daarbij wegen we jouw privacybelangen mee. Waar toestemming
+            vereist is, bijvoorbeeld voor toegang tot bewegingssensoren of het
+            ontvangen van pushmeldingen, vragen we die vooraf. Je kunt die
+            toestemming altijd intrekken via de instellingen van je telefoon.
+            Daarnaast verwerken we gegevens wanneer dit nodig is om aan een
+            wettelijke verplichting te voldoen.
           </p>
         </section>
 
@@ -274,9 +289,18 @@
             <li><strong>Apple</strong> distribueert de iOS-app en levert pushmeldingen af.</li>
           </ul>
           <p>
-            Deze partijen verwerken alleen gegevens die voor hun taak nodig zijn.
+            Voor zover deze partijen namens ons persoonsgegevens verwerken,
+            krijgen zij alleen de gegevens die voor hun taak nodig zijn en mogen
+            zij die uitsluitend volgens onze instructies gebruiken. Waar van
+            toepassing sluiten we verwerkersafspraken en verlangen we dezelfde of
+            gelijkwaardige bescherming als in deze verklaring en de App Store-regels.
+            Een partij kan voor eigen diensten ook zelfstandig verantwoordelijk zijn.
+          </p>
+          <p>
             Gegevens kunnen buiten de Europese Economische Ruimte worden verwerkt.
-            Wanneer dat gebeurt, gebruiken we de wettelijk vereiste waarborgen.
+            In dat geval gebruiken we een wettelijk overdrachtsmechanisme, zoals een
+            adequaatheidsbesluit of standaardcontractbepalingen. Je kunt via ons
+            contactadres informatie opvragen over de toepasselijke waarborgen.
           </p>
           <p>
             Deelnemers binnen jouw organisatie kunnen in het klassement je naam,
@@ -293,15 +317,24 @@
         <section id="bewaren">
           <h2>5. Hoe lang bewaren we gegevens?</h2>
           <p>
-            We bewaren account- en voortgangsgegevens zolang je account actief is en
-            zolang dat nodig is om Break Up te leveren. Je kunt je account definitief
-            verwijderen via <strong>Profiel → Account verwijderen</strong> in de app.
-            Daarmee worden je account en gekoppelde actieve appgegevens verwijderd.
+            Account-, profiel-, organisatie-, oefenings-, voortgangs-, badge-,
+            klassements- en meldingsgegevens bewaren we zolang je account actief is
+            en deze gegevens nodig zijn om Break Up te leveren. Een push-token wordt
+            bij uitloggen inactief gemaakt en bij accountverwijdering gewist.
+            Technische en beveiligingslogs bewaren we alleen zolang deze nodig zijn
+            voor beveiliging, fraudepreventie en storingsonderzoek, volgens de
+            vastgestelde bewaarschema’s van onze dienstverleners.
           </p>
           <p>
-            Een beperkte kopie kan tijdelijk aanwezig zijn in beveiligde back-ups of
-            technische logs. Deze wordt volgens de bewaartermijnen van onze
-            dienstverleners verwijderd of alleen langer bewaard wanneer de wet dat vereist.
+            Je kunt je account definitief verwijderen via
+            <strong>Profiel → Instellingen → Account verwijderen</strong> in de app.
+            Na je bevestiging verwijderen we het account en alle daaraan gekoppelde
+            actieve appgegevens uit de productieomgeving. Een beperkte kopie kan nog
+            tijdelijk aanwezig zijn in beveiligde, automatisch roterende back-ups.
+            Zulke kopieën worden niet opnieuw actief gebruikt en verdwijnen volgens
+            het back-upschema van de betreffende dienstverlener. Alleen wanneer de
+            wet dat vereist, bewaren we bepaalde gegevens langer; in dat geval
+            blokkeren we ander gebruik.
           </p>
         </section>
 
@@ -331,9 +364,13 @@
             <li>eerder gegeven toestemming in te trekken.</li>
           </ul>
           <p>
+            Je kunt een privacyverzoek indienen via
+            <a href="mailto:breakup.media26@gmail.com">breakup.media26@gmail.com</a>.
             We kunnen aanvullende informatie vragen om je identiteit te controleren.
-            Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens of de
-            privacytoezichthouder in het land waar je woont of werkt.
+            Toestemming voor bewegingssensoren en meldingen kun je daarnaast intrekken
+            via de instellingen van je telefoon. Je kunt ook een klacht indienen bij
+            de Autoriteit Persoonsgegevens of de privacytoezichthouder in het land
+            waar je woont of werkt.
           </p>
         </section>
 
